@@ -1,0 +1,79 @@
+/* nav */
+
+.navbar-brand {
+    font-size: 30px;
+    margin-right: 30px;
+}
+
+.button-style {
+    color: chocolate;
+    border: 1px solid chocolate;
+}
+
+.button-style:hover {
+    background-color: chocolate;
+    border: 1px solid chocolate;
+}
+
+.input-style {
+    border: 1px solid chocolate;
+}
+
+/* compagine */
+
+.compagine {
+    text-align: center;
+}
+
+/* card */
+
+.card-body p {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+/* footer */
+
+footer {
+    background-color: #19110b;
+    color: white;
+    font-size: 14px;
+}
+
+.first-line {
+    border-bottom: 1px solid #392d23;
+}
+
+.second-line a {
+    color: white;
+    text-decoration: none;
+}
+
+.moblie-footer {
+    border-top: 1px solid #392d23;
+    color: white;
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 300;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    align-items: center;
+    display: none;
+}
+
+/* 모바일 반응형 */
+
+@media screen and (max-width:48rem) {
+    .first-line {
+        text-align: center;
+    }
+    .second-line {
+        padding: 0 2rem;
+    }
+    .moblie-footer {
+        display: block;
+    }
+    .second-line .col {
+        margin-bottom: 10px;
+    }
+}
