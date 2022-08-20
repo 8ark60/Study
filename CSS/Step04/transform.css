@@ -1,0 +1,47 @@
+div {
+    width: 200px; height: 200px;
+    border: 5px solid #000;
+}
+div span {
+    width: 200px;
+    height: 200px;
+    display: block;
+    color: #fff;
+}
+div:first-of-type span {
+    background-color: red;
+    transform: rotate(10deg);
+}
+div:nth-of-type(2) span {
+    background-color: green;
+    transform: rotate(10deg) translateX(100px);
+}
+div:nth-of-type(3) span {
+    background-color: blue;
+    transform: rotate(10deg) translate(100px, 50px);
+}
+div:nth-of-type(4) span {
+    background-color: orchid;
+    transform: rotate(10deg) translate(100px, 50px) skewX(10deg);
+}
+div:nth-of-type(5) span {
+    background-color: chocolate;
+    transform: rotate(10deg) translate(100px, 50px) skew(10deg, 10deg);
+}
+div:nth-of-type(6) span {
+    background-color: violet;
+    transform: rotate(10deg) translate(100px, 50px) skew(10deg, 10deg) scaleX(1.2);
+}
+div:last-of-type span {
+    background-color: aqua;
+    transform: rotate(10deg) translate(100px, 50px) skew(10deg, 10deg) scale(1.2, 1.2);
+}
+
+/* 
+    ? transform
+    * rotate(deg) : 특정 각도만큼 회전.
+    * translate(X,Y) : 특정 크기만큼 해당 축 방향으로 이동
+    * skew(Xdeg, Ydeg) : 특정 각도만큼 해당 축 방향으로 기울임.
+    * scale(X, Y) : 특정 배율만큼 해당 축 방향으로 확대 및 축소.(1이 Default)
+    * transform-origin: X축 값, Y축 값
+*/
