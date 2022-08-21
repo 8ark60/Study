@@ -1,0 +1,59 @@
+* {
+    margin: 0; padding: 0; border: none;
+}
+html,body {
+    height: 100%;
+}
+body {
+    width: 1000px;
+    margin: auto;
+    background-color: #000;
+}
+
+section {
+    position: relative;
+    width: 100%; 
+    height: 100%;
+    perspective: 1500px;
+}
+/* 
+    section에 perspective로 원근감 주고, relative로 기준점 설정
+*/
+section .moveMent {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    animation-name: rotater;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform-style: preserve-3d;
+}
+@keyframes rotater{
+    form{
+        transform:rotateY(0deg);
+    }
+    to{
+        transform:rotateY(360deg);
+    }
+}
+section .moveMent .pic{
+    position:absolute; left:0; top:0;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+section .moveMent .pic:nth-child(1){
+    transform:rotateY(0deg) translateZ(-370px);
+}
+section .moveMent .pic:nth-child(2){
+    transform:rotateY(36deg) translateZ(-370px);
+}
+section .moveMent .pic:nth-child(3){
+    transform:rotateY(72deg) translateZ(-370px);
+}
+section .moveMent .pic:nth-child(4){
+    transform:rotateY(108deg) translateZ(-370px);
+}
+section .moveMent .pic .cell:hover{
+    transform:translateZ(20px) scale(1.1);
+}
