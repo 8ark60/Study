@@ -25,3 +25,42 @@ div:first-of-type span {
         transform: rotateX(360deg);
     }
 }
+
+div:nth-of-type(2) span {
+    background-color: blueviolet;
+    animation-name: verti;
+}
+@keyframes verti {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+div:nth-of-type(3) span {
+    background-color: darkcyan;
+    animation-name: depth;
+}
+@keyframes depth {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+div:nth-of-type(4) span {
+    background-color: yellow;
+    animation-name: rotate3D;
+}
+@keyframes rotate3D {
+    from {
+        transform: rotate3D(0, 0, 0, 0deg);
+    }
+    to {
+        transform: rotate3D(1, 1, 1, 360deg);
+    }
+}
