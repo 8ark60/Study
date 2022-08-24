@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="hello">안녕하세요.</h1>
+    <h1 id="hi">JS 초보입니다.</h1>
+
+    <!-- 안녕하세요를 50px로 바꿔라 -->
+    <h1 class="font">안녕하세요.</h1>
+
+    <script>
+        document.getElementById('hello').innerHTML = '안녕';
+        // html문서 
+        //.의 
+        //html요소를 가져와라 id가 hello 인
+        // (어떤요소를 바꿀건지) 안녕하세요 -> 안녕 
+        //getElementById('hello') <- 셀렉터
+        // 프로그래밍은 컴퓨터에게 일 시키는 행위
+        document.getElementById('hi').innerHTML = 'JS 고수입니다.';
+        document.getElementsByClassName('font')[0].style.fontSize = '50px';
+    </script>
+</body>
+</html>
