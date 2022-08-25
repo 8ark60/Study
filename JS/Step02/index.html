@@ -9,7 +9,25 @@
 </head>
 <body>
     <div class="alert-box" id="alert">알림창임</div>
-    <button onclick="document.getElementById('alert').style.display ='block';">버튼</button>
-    <button onclick="document.getElementById('alert').style.display ='none';">닫기</button>
+    <button onclick="알림창열기();">버튼</button>
+    <button onclick="알림창닫기();">닫기</button>
+
+    <script>
+
+        function 알림창열기(){
+            document.getElementById('alert').style.display ='block';
+        }
+
+        function 알림창닫기(){
+            document.getElementById('alert').style.display = 'none';
+        }
+
+        // 파라미터 
+        // 여러개의 함수를 한개로
+
+        
+
+
+    </script>
 </body>
 </html>

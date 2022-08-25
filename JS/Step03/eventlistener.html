@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="alert-box" id="alert">
+        <p>알림창입니다.</p>
+        <button id="close">닫기</button>
+    </div>
+</body>
+
+<script>
+    document.getElementById('close').addEventListener('click', function(){
+        document.getElementById('alert').style.display = 'none';
+    });
+
+    // 클릭 스크롤 키입력  mouseover 등등 -> 이벤트(event) 
+    // https://developer.mozilla.org/en-US/docs/Web/Events 이벤트 종류
+    // 코드를 순차적으로 실행할때 콜백함수 를 이용한다고 한다.
+    // 파라미터 자리에 들어가는 함수를 '콜백함수'
+</script>
+</html>
