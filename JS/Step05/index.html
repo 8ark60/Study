@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>369Game</title>
+</head>
+<body>
+    <!-- 3의 배수에서 박수를 치면 되는 게임 -->
+    <script>
+        function game (num){
+            
+            if (num % 3 == 0){
+                console.log('박수');
+            } else {
+                console.log('통과')
+            }
+        }
+
+        // 3의 배수에서 박수
+        // 9의 배수에선 박수두번
+
+        function game2 (num){
+            if(num % 9 == 0){
+                console.log('박수x2');
+            } else if (num % 3 == 0){   
+                console.log('박수');
+            } else {
+                console.log('통과');
+            }
+        }
+
+        // 과목마다 만점은 100점이지만 
+        // 120점 이상이면 합격
+        // 다만 한 과목이 40점미만이면 과락으로 불합격
+
+        function game3 (a, b){
+            if(a < 40 || b < 40){
+                console.log('불합격');
+            } else if (a > 100 || b > 100){
+                console.log('장난치지마');
+            } else if(a + b > 100){
+                console.log('합격');
+            } else {
+                console.log('불합격');
+            }
+        }
+    </script>
+</body>
+</html>
