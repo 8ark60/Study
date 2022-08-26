@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="darkmode.css">
+</head>
+<body>
+    <span class="badge bg-dark">Dark 🔄</span>
+
+
+    <script>
+        // 뱃지 1회 클릭시 내부 글자를 light 로 변경 (클릭횟수 홀수번)
+        // 뱃지 2회 클릭시 내부 글자를 Dark 로 변경(클릭 횟수 짝수번)
+        // 뱃지 3회 클릭시 내부 글자를 light 로 변경
+        // 뱃지 4회 클릭시 내부 글자를 Dark 로 변경
+        //  ...
+
+        var count = 0;
+
+        document.querySelector('.badge').addEventListener('click', function(){
+            count++;
+            if(count % 2 == 1){
+                document.getElementsByClassName('badge')[0].innerHTML = 'light';
+                document.querySelector('span').classList.add('bg-white');
+            } else {
+                document.getElementsByClassName('badge')[0].innerHTML = 'Dark';
+                document.querySelector('span').classList.remove('bg-white');
+            }
+        });
+
+        // 문법
+        // 변수의 선언 , 할당 , 범위
+        var 이름; // 선언
+        var 이름 = 'kim'; // 할당
+        이름 = 'park'; // 재할당
+        function 함수(){
+            var 이름 = 'kim'; 
+        } //변수 
+
+        // var let const 차이
+        // var 범위 function 재선언 재할당이 자유로움
+        // let 재선언불가능 재할당가능 실수를 줄일 수 있다.
+        // const 재선언불가능 재할당불가능 변하면 안되는 값을 보관하기 좋음
+
+
+
+    </script>
+</body>
+</html>
