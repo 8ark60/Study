@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="alert alert-danger">
-        5초 이내 구매시 사은품 증정!
+        <span>5</span>초 이내 구매시 사은품 증정!
     </div>
     <!-- 
         1초마다 5라는 문자를 1씩 감소
@@ -16,13 +16,24 @@
     -->
 
     <script>
-        setTimeout(function(){
-            document.getElementsByClassName('alert')[0].style.display = 'none';
-        }, 2000)
+        // setTimeout(function(){
+        //     document.getElementsByClassName('alert')[0].style.display = 'none';
+        // }, 2000)
 
+        // setInterval(function(){
+        //     //  2초마다 코드를 실행해줌
+        // }, 2000)
+        
+        var count = 5;
         setInterval(function(){
-            //  2초마다 코드를 실행해줌
-        }, 2000)
+            count -= 1;
+            if(count >= 0){
+                document.querySelector('span').innerHTML = count;
+            } else {
+                document.getElementsByClassName('alert')[0].style.display = 'none';
+            }
+            
+        }, 1000);
     </script>
 </body>
 </html>
