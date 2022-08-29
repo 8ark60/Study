@@ -35,3 +35,9 @@ document.querySelectorAll('.tab-button')[2].addEventListener('click', function()
     document.querySelectorAll('.tab-content')[1].classList.remove('show');
     document.querySelectorAll('.tab-content')[2].classList.add('show');
 });
+
+// $('.list').click(function(e){
+//    if(e.target == document.querySelectorAll('.tab-button')[0]){
+//     탭열기(0);
+//    } 
+// })
