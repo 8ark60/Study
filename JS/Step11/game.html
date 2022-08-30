@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game</title>
+</head>
+<body>
+    <script>
+        // 1번 game
+        // array 에서 철수라는 자료를 찾고싶습니다.
+        // array에서 이름을 찾아주는 함수를 만들고 있습니다.
+        // 함수 안에 파라미터로 이름을 집어넣으면
+        // 그 이름이 출석부에 있으면 콘솔창에 출력해주는 함수를 만들어봅시다. 
+        // 어떻게 만들면 될까요? 
+        // 동작 예시 :
+        // 이름찾기('철수'); 라고 쓰면 콘솔창에 '있어요'라는 글자가 떠야합니다.
+        // 이름찾기('명수'); 라고 쓰면 콘솔창에 아무 글자도 뜨지 않아야합니다.
+
+        var 출석부 = ['흥민', '철수', '영희', '재석'];
+
+        function 이름찾기(name){
+            for(var i = 0; i < 4; i++){
+                if(name == 출석부[i]){
+                    console.log('있어요');
+                }
+            }
+        }
+
+        이름찾기('철수');
+
+        // 2번 game 구구단
+        // 2단부터 9단까지 출력
+
+        for(var i = 1; i < 10; i++){
+            console.log('2단 :' + i * 2);
+        }
+
+        for(let i = 1; i < 10; i++){
+            for(let k = 1; k < 10; k++){
+                console.log(i + '단 : ' + i * k);
+            }
+        }
+
+        // 3번 game 평균점수 계산기 만들기
+        function 함수(arr, b){
+        var result = 0;
+
+            for ( let i = 0; i < arr.length; i++ ) {
+                result = result + arr[i]
+            }
+            if (result/arr.length < b) {
+        console.log('올랐네요');
+        } else {
+     console.log('같거나 떨어졌네요 재수추천')
+     }
+        console.log(result);
+        }
+
+        함수([2,3,4], 10);
+    </script>
+</body>
+</html>
