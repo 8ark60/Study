@@ -1,0 +1,102 @@
+/* 호환성문제 해결방법 */
+/* https://github.com/necolas/normalize.css/blob/master/normalize.css  */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+div, input, textarea {
+    box-sizing: border-box;
+}
+
+.main-background {
+    width: 100%;
+    height: 500px;
+    background-image: url(https://codingapple.com/wp-content/uploads/2019/06/shoes.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 1px;
+    text-align: center;
+}
+
+.main-title {
+    color: white;
+    font-size: 40px;
+    margin-top: 150px;
+}
+
+.main-subtitle {
+    color: white;
+}
+
+.btn-style {
+    position: relative;
+    top: 20px;
+    /* 내 원래 위치를 기준으로 이동하세요. */
+    /* position: absolute; */
+    /* 내 부모 태그가 기준 (부모중에 releative를 가진 요소) */
+    width: 120px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+}
+
+.sub-box {
+    background-color: #eee;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    top: -40px;
+    margin: auto;
+}
+
+.form-background {
+    background-color: black;
+    padding: 30px;
+}
+
+.form-white {
+    background-color: white;
+    padding: 30px;
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+}
+
+.form-input {
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100%;
+}
+
+form::after {
+    content: ''; display: block; clear: both; visibility: hidden;
+}
+
+.w-100 {
+    width: 100%;
+    padding: 10px;
+}
+
+.w-50 {
+    width: 50%;
+    float: left;
+    padding: 10px;
+}
+
+.yellow-btn {
+    padding: 10px;
+    background-color: orange;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    width: 100px;
+    display: block;
+    margin-left: auto;
+}
