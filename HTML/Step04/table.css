@@ -1,0 +1,79 @@
+/* th, td {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+} */
+
+/* vertical-align */
+/* inline inline-block 요소 간의 세로정렬할때 사용 */
+
+
+.bg-skyblue {
+    background-color: skyblue;
+    padding: 20px;
+    
+}
+
+.cart-table {
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.cart-table th:nth-child(2) {
+    width: 400px;
+}
+
+.cart-table td {
+    border-bottom: 1px solid #c2d3de;
+}
+
+.table-long {
+    width: 700px;
+}
+
+.btn-style {
+    padding: 15px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: coral;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-style:hover {
+    background-color: chocolate;
+}
+
+.btn-style:focus {
+    background-color: gray;
+}
+
+.btn-style:active {
+    background-color: brown;
+}
+
+.input-test {
+    font-size: 20px;
+}
+
+.input-test:focus {
+    border: 10px solid red;
+}
+
+.a-test {
+    text-decoration: none;
+}
+
+.a-test:link {
+    color: red;
+}
+
+.a-test:visited {
+    color: black;
+}
