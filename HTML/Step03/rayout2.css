@@ -100,3 +100,24 @@ form::after {
     display: block;
     margin-left: auto;
 }
+
+@media screen and (max-width:1200px) {
+    .main-title {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .main-title {
+        font-size: 10px;
+    }
+}
+
+/* @media screen and () {
+    미디어쿼리 
+} */
+/* 
+1200px
+768px
+
+ */

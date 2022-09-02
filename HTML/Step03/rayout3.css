@@ -19,3 +19,16 @@
 ul {
     display: flex;
 }
+
+.test {
+    font-size: 1rem;
+    width: 10rem;
+    /* html 태그의 폰트사이즈의 10배 기본사이즈 16px */
+    height: 50vh;
+    background-color: gray;
+}
+
+/* 
+    typography 디자인할 때 주로 사용 => rem
+    내 폰트사이즈의 x배 => em
+*/
