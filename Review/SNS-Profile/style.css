@@ -1,19 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+div {
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+
+h1 {
+    font-size: 25px;
+}
+
 .white-box {
     background-color: white;
-    padding: 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0.5px 0.5px 2px 1px #eee;
+    padding: 20px;
 }
 
-.left-line {
-    border-left: 1px solid black;
+.container {
+    display: flex;
+    align-items: center;
+    width: 1200px;
+    margin: auto;
 }
 
-.pill {
-	display: inline-block;
-	border: 1px solid lightgray;
+.profile-left {
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.profile-left ul {
+    margin-left: 15px;
+}
+
+.profile-left ul li {
+    margin-bottom: 5px;
+}
+
+.profile-left ul li:nth-child(3) {
+    color: #6fbaf8;
+}
+
+.btn-style {
+    background-color: #6fbaf8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 120px;
+    height: 40px;
+    padding: 10px;
+}
+
+
+.profile-right {
+    width: 30%;
+}
+
+.profile-right table {
+    width: 100%;
+    border-collapse: separate;
+	border-spacing: 40px 15px;
+    text-align: center;
+    border-left: 1px solid #eee;
+}
+
+.profile-right table tr {
+    border-bottom: 10px solid #fff;
+    text-align: left;
+}
+
+table tr td:nth-child(1) {
+    font-weight: bold;
+}
+
+.rayout1 {
+    display: flex;
+    width: 1200px;
+    margin: auto;
+}
+
+.rayout2 {
+    width: 400px;
+}
+
+.rayout2 h2 {
+    margin-bottom: 20px;
+}
+
+.rayout2 ul li {
+    margin-bottom: 10px;
+}
+
+.rayout3 .about {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+}
+
+.rayout3 h2 {
+    margin-bottom: 20px;
+}
+
+.rayout3 p {
+    margin-bottom: 20px;
+}
+
+.rayout3 .skills ul {
+    display: flex;
+}
+
+.skills ul li {
+    border: 1px solid lightgray;
 	border-radius: 100px;
 	padding: 3px 12px 5px 12px;
-	margin-right: 2px;
+	margin-right: 25px;
 	margin-bottom: 5px;
+}
+
+.rayout4 {
+    text-align: center;
+}
+
+.rayout4 i {
+    font-size: 120px;
+    color: #6fbaf8;
+    margin-bottom: 10px;
+}
+
+.rayout4 h3 {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.rayout4 button {
+    margin-bottom: 10px;
 }
