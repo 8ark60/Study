@@ -6,19 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Custom properties</title>
     <style>
+        :root {
+            --background-color: thistle;
+            --base-space: 8px;
+        }
         .first-list {
-            background-color: thistle;
+            background-color: var(--background-color);
             color: whitesmoke;
-            margin-left: 8px;
+            margin-left: var(--base-space);
+            --font-size: 32px;
+            font-size: var(--font-size);
         }
 
         .second-list {
             background-color: thistle;
             color: whitesmoke;
-            margin-left: 8px;
+            margin-left: calc(var(--base-space) * 2);
         }
 
-        /* 자주반복적으로 발생하는 것은 상수로 표현하는게 더 좋음! */
+        /* 
+            자주반복적으로 발생하는 것은 상수로 표현하는게 더 좋음! 
+            --custom;
+        */
     </style>
 </head>
 <body>
